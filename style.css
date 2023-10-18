@@ -1,3 +1,7 @@
-:root {
-  background-color: blue;
+body {
+  background-color: antiquewhite;
+  height: 100vh;
+}
+.library {
+  height: 100%;
 }
