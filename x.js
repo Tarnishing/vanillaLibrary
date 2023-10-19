@@ -44,16 +44,20 @@ function displayLibrary() {
     <p>Title: ${book.bookName}</p>
     <p>Genre: ${book.genre}</p>
     <p>Pages: ${book.pages}</p>
-    <button class ="remove-button">Remove</button>
+    <button class ="remove-button" data-index="${index}">Remove</button>
   `
     library.appendChild(bookCard)
+  })
 
-    const removeButton = document.querySelectorAll(".remove-button")
+  remove()
+}
 
-    removeButton.forEach((button) => {
-      const index = parseInt(button.getAttribute("data-index"))
-      button.addEventListener("click", () => removeBook(index))
-    })
+function remove() {
+  const removeButton = document.querySelectorAll(".remove-button")
+
+  removeButton.forEach((button) => {
+    const index = parseInt(button.getAttribute("data-index"))
+    button.addEventListener("click", () => removeBook(index))
   })
 }
 
