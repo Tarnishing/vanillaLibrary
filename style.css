@@ -5,3 +5,10 @@ body {
 .library {
   height: 100%;
 }
+
+.book-card {
+  background-color: navajowhite;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
