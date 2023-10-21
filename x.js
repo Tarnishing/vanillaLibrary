@@ -44,6 +44,7 @@ function displayLibrary() {
     <p>Title: ${book.bookName}</p>
     <p>Genre: ${book.genre}</p>
     <p>Pages: ${book.pages}</p>
+    <p><input type="checkbox"> read? </p>
     <button class ="remove-button" data-index="${index}">Remove</button>
   `
     library.appendChild(bookCard)
