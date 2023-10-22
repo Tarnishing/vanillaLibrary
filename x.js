@@ -32,6 +32,7 @@ function addBookToLibrary() {
   bookNameInput.value = ""
   genreInput.value = ""
   authNameInput.value = ""
+  pagesInput.value = ""
   displayLibrary()
 }
 
